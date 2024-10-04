@@ -1,36 +1,41 @@
-document.getElementById("search-button").addEventListener("click", function() {
-    const searchInput = document.getElementById("search-input").value.toLowerCase();
-    if (searchInput === "intro" || searchInput === "introduction") {
-        window.location.hash = "introduction";
-    } else if (searchInput === "guide" || searchInput == "guidance") {
-        window.location.hash = "Guidance";
-    }else if (searchInput === "con" || searchInput == "contact") {
-        window.location.hash = "contact-section";
-    } else {
-        alert("No section found for: " + searchInput);
+document.getElementById("search-button").addEventListener("keypress", function(event) {
+    if(event.key == "Enter"){
+        const searchInput = document.getElementById("search-input").value.toLowerCase();
+        if (searchInput === "intro" || searchInput === "introduction") {
+            window.location.hash = "introduction";
+        } else if (searchInput === "guide" || searchInput == "guidance") {
+            window.location.hash = "Guidance";
+        }else if (searchInput === "con" || searchInput == "contact") {
+            window.location.hash = "contact-section";
+        }else if (searchInput === "bipolar" || searchInput == "eat" || searchInput == "eating" || searchInput == "ptsd" || searchInput == "depres" || searchInput == "depression" || searchInput == "anxiety" || searchInput == "anxi" || searchInput == "stress") {
+            window.location.hash = "Guidance";
+        }else {
+            alert("No section found for: " + searchInput);
+        }
     }
 });
 
-function handleSubmit(event) {
-    event.preventDefault(); // Prevent form submission
-    
-    const form = event.target;
-    const name = form.name.value;
-    const age = form.age.value;
-    const occupation = form.occupation.value;
-    const issues = form.issues.value;
-    const contact = form.contact.value;
-    const comments = form.comments.value;
-    
-    const emailAddress = "anu.kaushik02@gmail.com"; 
-    const ccAddress = "cc-email@example.com"; 
-    const bccAddress = "bcc-email@example.com";
-    const subject = "Contact Form Submission from " + name;
-    const body = `Name: ${name}\nAge: ${age}\nOccupation: ${occupation}\nIssues: ${issues}\nContact Number: ${contact}\nComments: ${comments}`;
-    
-    window.location.href = `mailto:${emailAddress}?cc=${encodeURIComponent(ccAddress)}&bcc=${encodeURIComponent(bccAddress)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    alert("Thanks for your response, we'll contact you soon.");
-    form.reset(); // Reset form fields after submission
-    return false; // Prevent actual form submission
-}
+function sendEmail() {
+    const name = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const occupation = document.getElementById('occupation').value;
+    const issues = document.getElementById('issues').value;
+    const contact = document.getElementById('contact').value;
+    const comments = document.getElementById('comments').value;
+
+    // Construct the email body
+    const body = `
+      Name: ${name}%0D%0A
+      Age: ${age}%0D%0A
+      Occupation: ${occupation}%0D%0A
+      Issues: ${issues}%0D%0A
+      Contact Number: ${contact}%0D%0A
+      Comments: ${comments}
+    `;
+
+    // Mailto link with to, cc, and bcc
+    const mailtoLink = `mailto:anu.kaushik02@gmail.com?cc=devisht.nayyar30@gmail.com.com&bcc=ua2808@srmist.edu.in.com&subject=New Form Submission&body=${encodeURIComponent(body)}`;
+
+    // Open the mail client
+    window.location.href = mailtoLink;
+  }
