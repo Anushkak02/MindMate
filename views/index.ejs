@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="icon" href="/images/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles1.css">
+</head>
+<body>
+    <section id="Results">
+        <center><h1 style="font-size: 60px">Test Results</h1></center><br><br>
+        <h2>Your stress score is <%= Stress %></h2>
+        <% if(Stress <= 7) {%>
+            <h3>Your stress score is normal. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Try relaxation activities, like meditation, yoga, tai chi, breathing exercises and muscle relaxation. Programs are available online, in smartphone apps, and at many gyms and community centers.</li><br>
+                <li>Take good care of your body each day. Eating right, participating in physical activity and getting enough sleep can help your body handle stress much better.</li><br>
+                <li>Stay Positive and practice gratitude, acknowledging the good parts of your day or life.</li><br>
+                <li>Accept that you can’t control everything. Find ways to let go of worry about situations you can’t change.</li><br>
+                <li>Learn to say “no” to additional responsibilities when you’re too busy or stressed.</li><br>
+                <li>Stay connected with people who keep you calm, make you happy, provide emotional support and help you with practical things. A friend, family member or neighbor can become a good listener or share responsibilities so stress doesn’t become overwhelming.</li><br>
+            </ul>
+        <h4>If you continue to feel overwhelmed, symptoms aren't going away and your physical health is being affected, we recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Stress >7 && Stress <= 9) {%>
+            <h3>Your stress score is Mild. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Try relaxation activities, like meditation, yoga, tai chi, breathing exercises and muscle relaxation. Programs are available online, in smartphone apps, and at many gyms and community centers.</li><br>
+                <li>Take good care of your body each day. Eating right, participating in physical activity and getting enough sleep can help your body handle stress much better.</li><br>
+                <li>Stay Positive and practice gratitude, acknowledging the good parts of your day or life.</li><br>
+                <li>Accept that you can’t control everything. Find ways to let go of worry about situations you can’t change.</li><br>
+                <li>Learn to say “no” to additional responsibilities when you’re too busy or stressed.</li><br>
+                <li>Stay connected with people who keep you calm, make you happy, provide emotional support and help you with practical things. A friend, family member or neighbor can become a good listener or share responsibilities so stress doesn’t become overwhelming.</li><br>
+            </ul>
+        <h4>If you continue to feel overwhelmed, symptoms aren't going away and your physical health is being affected, we recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Stress >9 && Stress <= 12) {%>
+            <h3>Your stress levels are Moderate.</h3>
+            <p>We recommend getting a personalised consultation from an expert to ensure timely well-being. <br>You can download our MindMate app for the same.</p>
+        <% }else if(Stress > 12 && Stress <= 16){ %>
+            <h3>Your stress levels are Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Chronic Stress can impact your immune, digestive, reproductive as well as cardiovascular system.</p>
+
+        <% }else if(Stress >= 17){ %>
+            <h3>Your stress levels are Extremely Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Chronic Stress can impact your immune, digestive, reproductive as well as cardiovascular system.</p>
+        <% } %> <br><br>
+
+        <h2>Your Anxiety Score is <%= Anxiety %></h2>
+        <% if(Anxiety <= 3) {%>
+            <h3>Your anxiety score is normal. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Avoid alcohol and recreational drugs - These substances can cause or worsen anxiety. If you can't quit on your own, see your healthcare team or find a support group to help you.</li><br>
+                <li>Eat healthy foods - A healthy diet that incorporates vegetables, fruits, whole grains and fish may be linked to reduced anxiety, but more research is needed.</li><br>
+                <li>Identify triggers - Learn what situations or actions cause you stress or increase your anxiety. Practice the strategies you developed with your mental health professional so you're ready to deal with anxious feelings in these situations.</li><br>
+                <li>Keep physically active - Develop a routine so you're physically active most days of the week. Exercise is a powerful stress reducer that can improve your mood and help you stay healthy. Start slowly and gradually increase the amount and intensity of your activities.</li><br>
+                <li>Make sleep a priority - Do what you can to ensure you're getting enough sleep to feel rested. If you aren't sleeping well, talk with your healthcare professional.</li><br>
+                <li>Use stress management and relaxation techniques - Visualization techniques, meditation and yoga are examples of relaxation techniques that can ease anxiety. Breathing exercises are very effective</li><br>
+                <li>Socialize - Don't let worries isolate you from loved ones or activities.</li><br>
+                <li>Write in a journal - Keeping track of your personal life can help you and your mental health professional identify what's causing you stress and what seems to help you feel better.</li><br>
+            </ul>
+        <h4>If your fears or worry is impacting other aspects of your life, becomes uncontrollable, impacting physical health or you're having suicidal thoughts/behaviour, we highly recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Anxiety >3 && Anxiety <= 5) {%>
+            <h3>Your anxiety score is Mild. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Avoid alcohol and recreational drugs - These substances can cause or worsen anxiety. If you can't quit on your own, see your healthcare team or find a support group to help you.</li><br>
+                <li>Eat healthy foods - A healthy diet that incorporates vegetables, fruits, whole grains and fish may be linked to reduced anxiety, but more research is needed.</li><br>
+                <li>Identify triggers - Learn what situations or actions cause you stress or increase your anxiety. Practice the strategies you developed with your mental health professional so you're ready to deal with anxious feelings in these situations.</li><br>
+                <li>Keep physically active - Develop a routine so you're physically active most days of the week. Exercise is a powerful stress reducer that can improve your mood and help you stay healthy. Start slowly and gradually increase the amount and intensity of your activities.</li><br>
+                <li>Make sleep a priority - Do what you can to ensure you're getting enough sleep to feel rested. If you aren't sleeping well, talk with your healthcare professional.</li><br>
+                <li>Use stress management and relaxation techniques - Visualization techniques, meditation and yoga are examples of relaxation techniques that can ease anxiety. Breathing exercises are very effective</li><br>
+                <li>Socialize - Don't let worries isolate you from loved ones or activities.</li><br>
+                <li>Write in a journal - Keeping track of your personal life can help you and your mental health professional identify what's causing you stress and what seems to help you feel better.</li><br>
+            </ul>
+        <h4>If your fears or worry is impacting other aspects of your life, becomes uncontrollable, impacting physical health or you're having suicidal thoughts/behaviour, we highly recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Anxiety >5 && Anxiety <= 7) {%>
+            <h3>Your anxiety levels are Moderate.</h3>
+            <p>We recommend getting a personalised consultation from an expert to ensure timely well-being. <br>You can download our MindMate app for the same.</p>
+        <% }else if(Anxiety > 7 && Anxiety <= 9){ %>
+            <h3>Your anxiety levels are Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Anxiety can lead to or worsen consitions of depression, substance abuse, social isolation, digestive or bowel problems, sleep issues, headaches, poor quality of life. Wosrt of all, it can lead to Suicidal thoughts.</p>
+
+        <% }else if(Anxiety >= 10){ %>
+            <h3>Your anxiety levels are Extremely Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Anxiety can lead to or worsen consitions of depression, substance abuse, social isolation, digestive or bowel problems, sleep issues, headaches, poor quality of life. Wosrt of all, it can lead to Suicidal thoughts.</p>
+        <% } %> <br><br>
+
+        <h2>Your Depression Score is <%= Depression %></h2>
+        <% if(Depression <= 4) {%>
+            <h3>Your depression score is normal. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Try to keep doing activities you used to enjoy</li><br>
+                <li>Stay connected to friends and family</li><br>
+                <li>Exercise regularly, even if it’s just a short walk.</li><br>
+                <li>Avoid or cut down on alcohol and don’t use illicit drugs, which can make depression worse</li><br>
+                <li>Stick to regular eating and sleeping habits as much as possible.</li><br>
+                <li>Use stress management and relaxation techniques - Visualization techniques, meditation and yoga are examples of relaxation techniques that can ease anxiety. Breathing exercises are very effective</li><br>
+                <li>Talk to someone you trust about your feelings. </li><br>
+            </ul>
+        <h4>If you continue to feel emplty,lose concentration and self-worth or any excitement or you're having suicidal thoughts/behaviour, we highly recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Depression >4 && Depression <= 6) {%>
+            <h3>Your depression score is Mild. We recommend a few commmon yet approved things to deal with it such as:</h3>
+            <ul>
+                <li>Try to keep doing activities you used to enjoy</li><br>
+                <li>Stay connected to friends and family</li><br>
+                <li>Exercise regularly, even if it’s just a short walk.</li><br>
+                <li>Avoid or cut down on alcohol and don’t use illicit drugs, which can make depression worse</li><br>
+                <li>Stick to regular eating and sleeping habits as much as possible.</li><br>
+                <li>Use stress management and relaxation techniques - Visualization techniques, meditation and yoga are examples of relaxation techniques that can ease anxiety. Breathing exercises are very effective</li><br>
+                <li>Talk to someone you trust about your feelings. </li><br>
+            </ul>
+        <h4>If you continue to feel empty,lose concentration and self-worth or any excitement or you're having suicidal thoughts/behaviour, we highly recommend getting consultation via our MINDMATE App.</h4>
+        <h4>We recommend getting consultation for an effective personalised care. You can get help through the MindMate app.</h4>
+
+        <% } else if(Depression >6 && Depression <= 10) {%>
+            <h3>Your depression levels are Moderate.</h3>
+            <p>We recommend getting a personalised consultation from an expert to ensure timely well-being. <br>You can download our MindMate app for the same.</p>
+        <% }else if(Depression > 10 && Depression <= 13){ %>
+            <h3>Your depression levels are Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Depression can cause functional impairement, impact relations and self-destructive behaviour.</p>
+
+        <% }else if(Depression >= 14){ %>
+            <h3>Your depression levels are Extremely Severe.</h3>
+            <p>It is highly recommended to get a personalised consultation from an expert to ensure timely well-being, ASAP. <br>You can download our MindMate app for the same. <br>Depression can cause functional impairement, impact relations and self-destructive behaviour.</p>
+        <% } %>
+
+        <h4>Remember, what you're feeling is OK and your thoughts are valid. Your health matters. <br>At MindMate we aim to provide the healthcare needed for you. <br>Our app consists of tests specific to depression and anxiety each, to properly and more acccurately identify your health status, after which you can consult with a doctor directly. <br>At MindMate, We Care.</h4> <br><br>
+        <em>**Keep a note of your DASS test scores which will be helpful when you consult an expert.**</em>
+    </section>
+</body>
+</html>

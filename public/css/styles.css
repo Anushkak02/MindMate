@@ -1,0 +1,136 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCFAEE;
+}
+
+h1, h2, h3{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 300%;
+}
+
+p{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: larger;
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+}
+
+.container-fluid img{
+    height: 5%;
+    width: 5%;
+    border-radius: 40%;
+    margin-right: 2%;
+}
+
+section {
+    padding: 4%;
+}
+
+#image-section{
+    padding-top: 10%;
+}
+
+.support{
+    margin: auto;
+}
+
+.responsive-image {
+    margin: 2%;
+    height: 100%; /* Make images fill the height of the section */
+    width: 40%; /* Ensure they don't exceed width */
+}
+
+#introduction{
+    margin-top: 3%;
+    margin: 5%;
+    /*font-family: "Poppins", sans-serif;*/
+}
+
+hr{
+    color: #800000;
+    border-style: none;
+    border-top-style: dotted;
+    width: 67%;
+    border-width: 10px;
+        
+}
+
+.container{
+    margin-top: 4%;
+}
+#Guidance{
+    margin: 3%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: small;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Guidance strong{
+    font-size: x-large;
+    color:blueviolet;
+}
+
+.card{
+    margin: 5%;
+}
+
+#contact-section {
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #D7C9B1;
+    margin: 2% 5%;
+    align-items: center;
+}
+#contact-section h2 {
+    margin-bottom: 20px;
+}
+
+#contact-section form{
+    margin: 2% 2%;
+}
+
+form input{
+    margin: 2%;
+    width: 20%;
+    background-color: rgb(247, 241, 241);
+}
+form label{
+    font-size: larger;
+}
+
+#comments, #issues{
+    width: 50%;
+    background-color: rgb(247, 241, 241);
+}
+
+#questionnaire{
+    margin: 5%;
+    padding: 5%;
+}
+
+#questions{
+   background-color:  #edb97d;
+   margin: 2%;
+   padding: 2%;
+}
+
+#questions input{
+    margin: 2%;
+    width: 10%;
+    background-color: rgb(238, 222, 222);
+}
